@@ -58,9 +58,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::put('/employees/{id}', [EmployeeController::class, 'update']);
     Route::delete('/employees/{id}', [EmployeeController::class, 'destroy']);
 
-    Route::post('/subjects', [EmployeeController::class, 'store']);
-    Route::put('/subjects/{id}', [EmployeeController::class, 'update']);
-    Route::delete('/subjects/{id}', [EmployeeController::class, 'destroy']);
+    Route::post('/subjects', [SubjectController::class, 'store']);
+    Route::put('/subjects/{id}', [SubjectController::class, 'update']);
+    Route::delete('/subjects/{id}', [SubjectController::class, 'destroy']);
 
     Route::post('/sessions', [SessionController::class, 'store']);
     Route::put('/sessions/{id}', [SessionController::class, 'update']);
